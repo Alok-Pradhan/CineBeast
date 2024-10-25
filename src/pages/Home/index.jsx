@@ -1,18 +1,10 @@
-import React from 'react'
+import Carousel from './Carousel/Carousel'
 import styles from './home.module.css'
-import { Button, Inputs, Modal, ToolTip } from '@/components'
-import { Header, Footer, Navbar } from '@/layout'
 
 const index = () => {
   return (
     <div className={styles.root}>
-      <Header />
-      Home Pag
-      <br/>
-      {/* <Button/>
-      <Inputs/>
-      <Modal/>
-      <ToolTip/> */}
+      <Carousel />
     </div>
   )
 }
