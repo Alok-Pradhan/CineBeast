@@ -6,8 +6,6 @@ import '../layout/Sidebar/index.css'
 // Lazy load the components
 const Home = lazy(() => import('@/pages/Home'));
 const Login = lazy(() => import('@/pages/Login'));
-const Payment = lazy(() => import('@/pages/Payment'));
-const Shop = lazy(() => import('@/pages/Shop'));
 const SignUp = lazy(() => import('@/pages/SignUp'));
 
 const App = () => {
@@ -20,8 +18,6 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/payment" element={<Payment />} />
-              <Route path="/shop" element={<Shop />} />
               <Route path="/sign-up" element={<SignUp />} />
             </Routes>
           </Suspense>
