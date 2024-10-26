@@ -1,49 +1,54 @@
-#myCarousel {
-    img {
-      height: 50%;
-      width: auto;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-  }
-  
-  #thumbSlider {
-    .carousel-inner {
-      padding-left: 3rem;
-      padding-right: 3rem;
-      
-      .row {
-        overflow: hidden;
-      }
-      
-      .thumb {
-        &:hover {
-          cursor: pointer;
-        }
-        &.active img {
-          opacity: 1;
-        }
-      }
-      
-      img {
-        height: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        opacity: .5;
-        
-        &:hover {
-          opacity: 1;
-        }
-      }
-      
-      .carousel-control-prev-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23000'%20viewBox='0%200%208%208'%3E%3Cpath%20d='M5.25%200l-4%204%204%204%201.5-1.5-2.5-2.5%202.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-      }
-      .carousel-control-next-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='%23000'%20viewBox='0%200%208%208'%3E%3Cpath%20d='M2.75%200l-1.5%201.5%202.5%202.5-2.5%202.5%201.5%201.5%204-4-4-4z'/%3E%3C/svg%3E");
-      }
-    }
-  } 
-  
+.carousel-inner img{
+  width: 100%;
+  height: 800px;
+}
+
+
+.gradient-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+  linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%), 
+  linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%);  
+  pointer-events: none;
+}
+
+.content{
+  position: relative;
+}
+
+.navigation{
+  z-index: 99;
+  position:absolute;
+  bottom: 30px;
+  right: 80px;
+  width: 500px;
+}
+.mdetails{
+  z-index: 99;
+  position: absolute;
+  top: 390px;
+  left: 50px;
+}
+.btn-danger {
+  transition: transform 0.3s ease-in-out; /* Duration of 0.3s with easing */
+}
+.btn-danger:hover {
+  transform: scale(1.2, 1.2); /* Scale on hover */
+}
+.watch_button {
+  background-color: hsla(0, 0%, 100%, .2);
+  width: 254px;
+  height: 50px;
+  color: aliceblue;
+  transition: transform 0.3s ease-in-out;
+}
+.watch_button:hover{
+  background-color: hsla(0, 0%, 100%, 0.055);
+  color: black;
+  transform: scale(1.1, 1.1); /* Scale on hover */
+}
