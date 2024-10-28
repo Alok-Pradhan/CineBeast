@@ -1,9 +1,9 @@
-import Carousel from './Carousel/Carousel'
+import CarouselEle from "./Carousel/Carousel"
 
 const index = () => {
   return (
     <div>
-      <Carousel />
+      <CarouselEle />
     </div>
   )
 }

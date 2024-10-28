@@ -9,7 +9,7 @@ const FetchCarouselData = async () => {
         // eslint-disable-next-line no-unused-vars
         const { data, error } = await getApi(ENDPOINT_COLLECTION.carousel);
         console.log(data);
-        dispatch(set({ carouselInfo: data?.results ? data?.results?.slice(6,12) : [] }));
+        dispatch(set({ carouselInfo: data?.results ? data?.results?.slice(13,19) : [] }));
       } catch (err) {
         console.error('Fetch error:', err);
       }
