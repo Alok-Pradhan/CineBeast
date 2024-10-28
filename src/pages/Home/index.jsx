@@ -1,10 +1,9 @@
-import Carousel from './Carousel/Carousel'
-import styles from './home.module.css'
+import CarouselEle from "./Carousel/Carousel"
 
 const index = () => {
   return (
-    <div className={styles.root}>
-      <Carousel />
+    <div>
+      <CarouselEle />
     </div>
   )
 }
