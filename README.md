@@ -1,4 +1,4 @@
-# React JS Advance-Level Folder Structure
+# CineBeast
 
 How to run the project
 ```javascript
