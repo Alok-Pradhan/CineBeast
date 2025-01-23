@@ -8,7 +8,9 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="logo-details">
+      <NavLink to="/" className="nav-link">
         <img src={logo} className='logo' alt="profileImg" />
+        </NavLink>
       </div>
       <ul className="nav- p-0 align-middle">
         <li className="nav-item mt-1 icon-container">
@@ -52,14 +54,6 @@ const Sidebar = () => {
             <i className="fa-solid fa-icons"></i>
             <span className="tooltip">Categories</span>
           </NavLink>
-        </li>
-        <li className="profile">
-          <div className="profile-details">
-          <img src={logo} className='logo' alt="profileImg" />
-            <div className="name_job">
-              {/* <div className="text-light">Alok</div> */}
-            </div>
-          </div>
         </li>
       </ul>
     </div>
